@@ -1,0 +1,62 @@
+
+/*
+ Step1: Understand the Problem Statement
+ Step2: Write the Algorithm
+ Step3:Decide the Programming language
+ step4:write the Program
+ step 5: Test the program
+
+
+*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Step1:Understand the Problem Statement
+//      User Is Going To enter Any two integers and we have to perform addition
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Step2: Write the Algorithm
+/*
+        Start
+            Accept First No As no1
+            Accept Second Number As no2
+            Create The variable to store the result 
+            Perform the Addition And store into Ans
+            Display the result From Ans
+        End
+
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   // Step3: Decide the Programming Language
+   //        we select C Programming
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+        //Step 4: Write A Programm
+ //
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int Addition(int ino1,int ino2)
+{
+    int iAns=0;
+
+    iAns=ino1+ino2; //Business Logic 
+    return iAns;
+
+}
+int main()
+{
+    int iValue1=0,iValue2=0,iResult=0;
+
+    printf("Enter The First Number: \n");
+    scanf("%d",&iValue1);                   //& is Address of the Number 
+    
+    printf("Enter Ther Second Number: \n");
+    scanf ("%d",&iValue2);
+
+    iResult=Addition(iValue1,iValue2);
+    printf("Addition is: %d",iResult);
+    
+    return 0;
+ }
